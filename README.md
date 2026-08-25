@@ -1,68 +1,144 @@
-# SESSION-SCHEDULAR Smart Study Planner
+# 📚 STUDY APP
 
-SESSION-SCHEDULAR is a responsive React + TypeScript study planner prototype for a CSE portfolio project. It includes a dashboard, session logbook, subject breakdowns, goal progress, Pomodoro timer, statistics, calendar, suggestions, achievements, profile, light/dark mode, local persistence, and CSV export.
+## 🚀 Project Overview
 
-## Run
+STUDY APP is a web-based study management application designed to help students organize their studies, manage their tasks, and improve their learning experience through a simple and user-friendly interface.
+
+## 🎯 Objective
+
+The main objective of this project is to provide students with a centralized platform where they can organize their study activities, manage academic tasks, and track their progress efficiently.
+
+## 📋 Features Included
+
+### 📝 Study Management
+
+* Add and manage study activities
+* Organize academic tasks
+* Track study-related information
+* User-friendly interface
+
+### 📊 Progress Tracking
+
+* Monitor study progress
+* View important study information
+* Organize tasks efficiently
+
+### ⏰ Study Scheduling
+
+* Schedule study activities
+* Manage study sessions
+* Organize your study time
+
+### 🤖 Smart Features
+
+* Intelligent study planning
+* Personalized study organization
+* Efficient task management
+
+## 🛠️ Technologies Used
+
+* ⚛️ React
+* 📘 TypeScript
+* ⚡ Vite
+* 🎨 CSS
+* 🟢 Node.js
+* 🔧 Git & GitHub
+
+## 📁 Project Structure
+
+```text
+STUDY-APP/
+│
+├── 📂 backend/
+│   ├── data.json
+│   └── server.ts
+│
+├── 📂 public/
+│
+├── 📂 src/
+│   ├── assets/
+│   ├── api.ts
+│   ├── App.css
+│   ├── App.tsx
+│   ├── index.css
+│   └── main.tsx
+│
+├── 📄 .env.example
+├── 📄 .gitignore
+├── 📄 index.html
+├── 📄 package.json
+├── 📄 package-lock.json
+├── 📄 README.md
+├── 📄 tsconfig.json
+├── 📄 tsconfig.app.json
+├── 📄 tsconfig.node.json
+└── 📄 vite.config.ts
+```
+
+## ▶️ How to Run
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/gonelasuryateja2006/STUDY-APP.git
+```
+
+### 2️⃣ Open the Project
+
+```bash
+cd STUDY-APP
+```
+
+### 3️⃣ Install Dependencies
 
 ```bash
 npm install
+```
+
+### 4️⃣ Start the Development Server
+
+```bash
 npm run dev
 ```
 
-The API can be started in a second terminal with `npm run api`; it listens on `http://localhost:4000`. The API supports authentication, profile, session, subject, and AI agent routes. Copy `.env.example` to `.env` and set `JWT_SECRET` plus `AI_API_KEY` to enable real AI responses. Without an AI key, the browser keeps its local study guidance fallback.
+The application will be available at:
 
-For a production check:
-
-```bash
-npm run build
-npm run preview
+```text
+http://127.0.0.1:5173/
 ```
 
-## Project Structure
+## 🔍 Key Features
 
-- `src/App.tsx`: application state, domain types, navigation, views, and workflows.
-- `backend/server.ts`: authenticated Express API with hashed passwords and persisted user data.
-- `.env.example`: backend and OpenAI-compatible AI provider configuration.
-- `src/App.css`: responsive visual system and light/dark themes.
-- `public/manifest.webmanifest`: install metadata for supported browsers.
+* 📚 Study organization
+* 📝 Task management
+* ⏰ Study scheduling
+* 📊 Progress management
+* 💻 Responsive web interface
+* ⚡ Fast development using Vite
+* 🔧 TypeScript-based development
 
-The browser demo persists locally in `localStorage`. Authenticated accounts persist users, profiles, goals, sessions, and subjects in `backend/session-schedular.sqlite`; the API enforces ownership with JWT middleware and user-scoped SQL queries. The starter data is intentionally removable through the session delete controls.
+## 🔮 Future Improvements
 
-## OOP Mapping
+* 📱 Mobile application
+* 🔔 Study reminders and notifications
+* 📈 Advanced progress analytics
+* 🤖 AI-powered study recommendations
+* ☁️ Cloud data synchronization
+* 👤 User authentication
+* 🏆 Study goals and achievements
 
-The TypeScript domain types represent the original C++ concepts: `Session` stores study information, `Subject` groups related work, and the page components act as focused services around those objects. Encapsulation is represented by component state and event handlers; persistence is isolated behind `localStorage`; collections are represented by typed arrays and derived aggregates such as subject totals. A production backend can lift these same types into `User`, `Student`, `StudySession`, and polymorphic `Suggestion` service classes backed by SQLite.
+## 👨‍💻 Author
 
-## Scope Note
+**Gonela Surya Teja**
 
-The application includes a local Express/SQLite service for development. Before public deployment, set a strong `JWT_SECRET`, configure HTTPS, add rate limiting, and provide a real AI provider key through the server environment only.
+B.Tech Computer Science & Engineering
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## ⭐ Support
 
-Currently, two official plugins are available:
+If you found this project useful, consider giving the repository a ⭐ on GitHub!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+### 📌 Project Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+🔗 https://github.com/gonelasuryateja2006/STUDY-APP

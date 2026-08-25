@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "edca8eb5-5b30-49c8-8a06-ca311f6ace91",
+      "name": "Smoke Test",
+      "email": "smoke659928832@example.com",
+      "passwordHash": "$2b$12$0oYaDIZPMl.vLgrmbJVhJeaT.AGq63kd3ZJeEHhcKwD0SLa2vG9gC",
+      "goal": 180
+    },
+    {
+      "id": "742669ef-73c1-4ac9-ab83-b6df5271af67",
+      "name": "CRUD Test",
+      "email": "crud1020832034@example.com",
+      "passwordHash": "$2b$12$x2lvt3eaRYq9Fa2nqzdtZeHLRYv8e0/LPQKXNIesP/x8uvbAm.IOW",
+      "goal": 180
+    }
+  ],
+  "sessions": {
+    "edca8eb5-5b30-49c8-8a06-ca311f6ace91": [],
+    "742669ef-73c1-4ac9-ab83-b6df5271af67": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "SESSION-SCHEDULAR Smart Study Planner",
+  "short_name": "SESSION-SCHEDULAR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f7f4",
+  "theme_color": "#253b56",
+  "description": "Plan smart. Study better. Achieve more.",
+  "icons": []
+}

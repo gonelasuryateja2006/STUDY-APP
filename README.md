@@ -130,8 +130,9 @@ http://127.0.0.1:5173/
 ## 👨‍💻 Author
 
 **Gonela Surya Teja**
+Currently pursuing:
 
-B.Tech Computer Science & Engineering
+B.Tech Computer Science & Engineering — SRM IST
 
 ## ⭐ Support
 
